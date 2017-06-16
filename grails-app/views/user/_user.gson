@@ -1,0 +1,11 @@
+import data.service.lazyiniterror.User
+
+model {
+    User user
+}
+
+json {
+    id user.id
+    email user.email
+    profile tmpl.userProfile(userProfile: user.profile)
+}

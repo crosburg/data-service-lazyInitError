@@ -1,0 +1,12 @@
+package user
+
+import data.service.lazyiniterror.UserProfile
+
+model {
+    UserProfile userProfile
+}
+
+json {
+    username userProfile.username
+    website userProfile.website
+}
